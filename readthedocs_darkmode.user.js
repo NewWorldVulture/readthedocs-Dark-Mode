@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         ReadTheDocs dark theme / night mode
 // @namespace    https://github.com/NewWorldVulture
-// @version      0.1
+// @version      0.2
 // @description  Dark theme / night mode for ReadTheDocs.io
 // @author       Ada
 // @match        https://*.readthedocs.io/*
+// @match        https://*.readthedocs.org/*
 // @match        https://*.python.org/*
 // @grant        GM_addStyle
 // ==/UserScript==
@@ -12,19 +13,26 @@
 GM_addStyle('body { color: #111; background-color: #111; }');
 GM_addStyle('div { background-color: #111; }');
 GM_addStyle('div.document { color: #111; background-color: #111; }');
+GM_addStyle('div.wy-nav-content { color: #111; background-color: #111; }');
+GM_addStyle('div.wy-side-nav-search { color: #820; background-color: #820; }');
+GM_addStyle('div.version { color: #820; background-color: #820; }');
+GM_addStyle('div.module-item { color: #820; background-color: #820; }');
+
 GM_addStyle('div.note { color: #222; background-color: #222; border: 1px solid #333; }');
 GM_addStyle('div.body { color: #111; background-color: #111; }');
 GM_addStyle('div.body h1, h2, h3, h4, h5 { color: #c40; background-color: #111; }');
 GM_addStyle('div.section { color: #111; background-color: #111; }');
 GM_addStyle('div.sphinxsidebar { color: #05050505; background-color: #05050505; }');
+GM_addStyle('form.wyform { color: #820; background-color: #820; }');
+
 GM_addStyle('div.related { color: #111; background-color: #111; border-bottom: 1px solid #222; border-top: 1px solid #222; }');
 GM_addStyle('div.related:first-child { color: #111; background-color: #111; border-bottom: 1px solid #222; border-top: 1px solid #222; }');
 
 GM_addStyle('code { color: #d75; background-color: #333; }');
 GM_addStyle('toctree-l1, toctree-l2, toctree-l3 { color: #333; }');
-GM_addStyle('h1, h2, h3, h4, h5 { color: #d40; }');
+GM_addStyle('h1, h2, h3, h4, h5 { color: #d40; text-shadow: 0 1px 0 rgba(3,1,0,0.7) }');
 GM_addStyle('p { color: #930; }');
-GM_addStyle('li { color: #930; }');
+GM_addStyle('li { color: #930; background-color: #111; }');
 
 GM_addStyle('a:link { color: #a30; }');
 GM_addStyle('a:visited { color: #a77; }');
